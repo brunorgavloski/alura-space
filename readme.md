@@ -19,12 +19,20 @@ pip install python-dotenv
 pip freeze > requirements.txt
 
 ### git ignore
-marcar arquivos que devem ser enviados ao github
+Marcar arquivos que devem ser enviados ao github
 Gerador do gitignore referente ao django: https://www.toptal.com/developers/gitignore
 
 ### git
-enviar dados para o github: git push origin master
+Enviar dados para o github: git push origin master
 
 ### startapp
-inicia uma nova função do projeto, o comando abaixo automaticamente cria uma nova pasta no diretório do projeto.
+Inicia uma nova função do projeto, o comando abaixo automaticamente cria uma nova pasta no diretório do projeto.
 * python manage.py startapp galeria
+Também é necessário ir até o arquivo settings em INSTALLED_APPS e adicionar o app recem criado. Depois disso rodar o server novamente.
+
+### Trabalhando com o app
+- views.py cuidar do que será exibido em cada página
+- importar as bibliotecas necessárias por exemplo django.http
+
+        funcao(request)
+            retornar conteudo
