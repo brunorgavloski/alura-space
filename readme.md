@@ -34,5 +34,11 @@ Também é necessário ir até o arquivo settings em INSTALLED_APPS e adicionar 
 - views.py cuidar do que será exibido em cada página
 - importar as bibliotecas necessárias por exemplo django.http
 
-        funcao(request)
+        funcao Nome(request)
             retornar conteudo
+- Fica claro que é necessário criar a função que irá servir um conteúdo.
+- Para finalizar é necessário ir até o arquivo /setup/urls e importar a função:
+        from galeria.viwes import NOME DA FUNÇÃO
+- Passar o caminho:
+        path('',NOME DA FUNCAO)
+- Quando a requisição chegar na raiz a função index será executada.
